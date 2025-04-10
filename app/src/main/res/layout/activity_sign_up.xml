@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main"
+    android:id="@+id/layoutSignUp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F5F7FF"
@@ -29,12 +29,49 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Silahkan login terlebih dahulu"
+                android:text="Silahkan daftar akun baru"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:textColor="#5C6BC0"
                 android:layout_marginBottom="24dp" />
 
+            <!-- Nama Pengguna -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:boxStrokeColor="#7986CB"
+                app:hintTextColor="#5C6BC0"
+                android:hint="Nama Pengguna"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:textColor="#303F9F"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- NIM -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:boxStrokeColor="#7986CB"
+                app:hintTextColor="#5C6BC0"
+                android:hint="NIM"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNIM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="#303F9F"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Email -->
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -45,17 +82,18 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/email"
+                    android:id="@+id/etEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"
                     android:textColor="#303F9F"/>
             </com.google.android.material.textfield.TextInputLayout>
 
+            <!-- Password -->
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="24dp"
                 app:boxStrokeColor="#7986CB"
                 app:hintTextColor="#5C6BC0"
                 android:hint="Password"
@@ -63,33 +101,19 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/password"
+                    android:id="@+id/etPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPassword"
                     android:textColor="#303F9F"/>
             </com.google.android.material.textfield.TextInputLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="24dp">
-
-                <CheckBox
-                    android:id="@+id/checkboxes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ingat saya"
-                    android:textColor="#7986CB"
-                    android:buttonTint="#7986CB"/>
-            </LinearLayout>
-
+            <!-- Button Daftar -->
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Login"
+                android:text="Daftar"
                 android:textStyle="bold"
                 android:paddingVertical="12dp"
                 android:backgroundTint="#5C6BC0"
@@ -98,19 +122,10 @@
                 android:layout_marginBottom="16dp"/>
 
             <TextView
-                android:id="@+id/forgotPassword"
+                android:id="@+id/signIn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lupa Password?"
-                android:textColor="#5C6BC0"
-                android:textSize="14sp"
-                android:layout_marginTop="8dp"/>
-
-            <TextView
-                android:id="@+id/signUp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Belum punya akun? Daftar"
+                android:text="Sudah punya akun? Login"
                 android:textColor="#5C6BC0"
                 android:textSize="14sp"
                 android:layout_marginTop="12dp"/>
