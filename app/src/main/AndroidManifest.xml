@@ -28,7 +28,12 @@
         <activity
             android:name=".HomeActivity"
             android:exported="true" />
-
+        <activity android:name=".BudgetTrackerActivity" />
+        <activity android:name=".CatatanHarianActivity" />
+        <activity android:name=".TodoListActivity" />
+        <activity
+            android:name=".AgendaActivity"
+            android:exported="false" />
         <activity
             android:name=".SignUpActivity"
             android:exported="false" />

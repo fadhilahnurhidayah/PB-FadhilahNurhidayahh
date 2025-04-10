@@ -53,9 +53,13 @@
 
             <!-- Card 1 -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/budgetTrackerCard"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_columnWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="2dp"
                 app:cardBackgroundColor="#E1F5FE">
@@ -92,9 +96,13 @@
 
             <!-- Card 2 -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/catatanHarianCard"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_columnWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="2dp"
                 app:cardBackgroundColor="#EDE7F6">
@@ -131,9 +139,13 @@
 
             <!-- Card 3 -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/todoListCard"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_columnWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="2dp"
                 app:cardBackgroundColor="#FFF8E1">
@@ -170,9 +182,13 @@
 
             <!-- Card 4 -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/agendaCard"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_columnWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="2dp"
                 app:cardBackgroundColor="#E8F5E9">
